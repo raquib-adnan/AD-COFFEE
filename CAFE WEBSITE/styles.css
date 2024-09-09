@@ -1,3 +1,4 @@
+/* Body styling */
 body {
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
@@ -6,12 +7,14 @@ body {
   color: #333;
 }
 
+/* Container to center and align content */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* Header styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -52,9 +55,10 @@ nav ul li a:hover {
   background-color: #e6a03d;
 }
 
+/* Hero section styling */
 .hero {
   background: linear-gradient(rgba(75, 46, 43, 0.8), rgba(75, 46, 43, 0.8)),
-    url("") no-repeat center center/cover;
+    url("assets/coffee-hero.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -92,6 +96,69 @@ nav ul li a:hover {
   background-color: #d48831;
 }
 
+/* Special Arrivals Section (Hover Cards) */
+.special-arrivals {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.special-arrivals h3 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #4b2e2b;
+}
+
+/* Hover Card Grid Layout */
+.hover-card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hover-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hover-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hover-card-content {
+  padding: 20px;
+}
+
+.hover-card-content h4 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+  color: #4b2e2b;
+}
+
+.hover-card-content p {
+  margin: 0 0 10px;
+  font-size: 1em;
+  color: #777;
+}
+
+.hover-card-content span {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #e6a03d;
+}
+
+/* Menu Section */
 .menu {
   margin: 40px 0;
 }
@@ -147,6 +214,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
+/* Footer styling */
 footer {
   background-color: #4b2e2b;
   color: white;
