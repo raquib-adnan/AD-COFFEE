@@ -96,19 +96,78 @@ nav ul li a:hover {
   background-color: #d48831;
 }
 
-/* Special Arrivals Section (Hover Cards) */
-.special-arrivals {
+/* Card Section Styling (Best Sellers and Special Arrivals) */
+.card-section {
   margin: 50px 0;
   text-align: center;
 }
 
-.special-arrivals h3 {
+.card-section h3 {
   font-size: 2.5em;
   margin-bottom: 40px;
   color: #4b2e2b;
 }
 
-/* Hover Card Grid Layout */
+/* Flexbox-based card layout for displaying two cards side by side */
+.flex-card-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the two cards */
+}
+
+.flex-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 48%; /* Smaller card width to fit two in a row */
+  cursor: pointer;
+  padding: 15px;
+}
+
+.flex-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flex-card img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px; /* Space between image and content */
+}
+
+.flex-card-content {
+  width: 60%;
+}
+
+.flex-card-content h4 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #4b2e2b;
+}
+
+.flex-card-content p {
+  margin: 0 0 10px;
+  font-size: 0.9em; /* Make text slightly smaller */
+  color: #777;
+}
+
+.flex-card-content span {
+  font-size: 1.2em; /* Slightly smaller */
+  font-weight: bold;
+  color: #e6a03d;
+}
+
+/* Special Arrivals Hover Cards */
+.special-arrivals {
+  margin: 50px 0;
+}
+
 .hover-card-grid {
   display: flex;
   justify-content: center;
@@ -164,10 +223,10 @@ nav ul li a:hover {
 }
 
 .menu h3 {
-  text-align: center;
   font-size: 2.5em;
   margin-bottom: 40px;
   color: #4b2e2b;
+  text-align: center;
 }
 
 .menu-grid {
@@ -240,15 +299,4 @@ footer a {
 
 footer a:hover {
   color: #d48831;
-}
-/* Best Sellers Section */
-.best-sellers {
-  margin: 50px 0;
-  text-align: center;
-}
-
-.best-sellers h3 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #4b2e2b;
 }
