@@ -300,3 +300,14 @@ footer a {
 footer a:hover {
   color: #d48831;
 }
+
+.about-images {
+  display: flex;
+  gap: 20px; 
+}
+
+.about-image {
+  width: 700px;
+  height: 350px; 
+  object-fit: cover;
+}
