@@ -1,7 +1,7 @@
 # AD-COFFEE
 This is a Cafe Coffee shop web page by name AD-COFFEE, made with HTML and CSS
 
-**AD-Coffee** is a two-page website developed using HTML and CSS to represent a modern coffee shop. The website is designed to provide an immersive and engaging experience that reflects the AD-Coffee brand. 
+**AD-Coffee** is a three-page website developed using HTML and CSS to represent a modern coffee shop. The website is designed to provide an immersive and engaging experience that reflects the AD-Coffee brand. 
 
 The home page introduces visitors to the shop's specialty brews and inviting ambiance through a clean and visually appealing layout. A secondary page presents the menu, location, and contact details in a well-organized and accessible manner. 
 
